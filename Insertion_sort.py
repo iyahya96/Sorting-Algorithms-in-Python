@@ -15,14 +15,3 @@ def insertion_sort(arr: list[float]) -> list[float]:
             j -=1
         arr[j+1] = key
     return arr
-
-print(insertion_sort([4,1,5,3,7,6,2,9,8]))
-#Test Cases
-print(insertion_sort([]))                    # Empty list: []
-print(insertion_sort([1]))                   # Single element: [1]
-print(insertion_sort([5, 5, 5, 5]))          # All identical: [5, 5, 5, 5]
-print(insertion_sort([1, 2, 3, 4, 5]))       # Already sorted: [1, 2, 3, 4, 5]
-print(insertion_sort([5, 4, 3, 2, 1]))       # Reverse sorted: [1, 2, 3, 4, 5]
-print(insertion_sort([3, 1, 4, 1, 5, 9]))    # Random order with duplicates: [1, 1, 3, 4, 5, 9]
-print(insertion_sort([-2, -5, 0, 3, 1]))     # Includes negatives: [-5, -2, 0, 1, 3]
-print(insertion_sort([2, 3, 2, 1, 3]))       # Duplicates: [1, 2, 2, 3, 3]
