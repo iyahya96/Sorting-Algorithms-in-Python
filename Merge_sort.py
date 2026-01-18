@@ -1,7 +1,10 @@
 
 '''Merge sort is a sorting algorithm based on the divide-and-conquer paradigm
-. It operates by recursively dividing an unsorted list into smaller sublists until each sublist contains only one element, which is inherently sorted.
-Subsequently, these single-element sublists are repeatedly merged back together in a sorted manner to produce a fully sorted list.'''
+. It operates by recursively dividing an unsorted list into smaller sublists until
+each sublist contains only one element, which is inherently sorted.Subsequently, these
+single-element sublists are repeatedly merged back together in a sorted manner to 
+produce a fully sorted list.'''
+
 #Main function
 def merge_sort(nums: list[float])-> list[float]:
 
@@ -35,7 +38,3 @@ def merge(first: list[float],second: list[float])-> list[float]:
     final_list.extend(first[i:])
     final_list.extend(second[j:])
     return final_list
-
-#Driver code
-
-print(merge_sort([3,6,1,7,14,17,4]))
