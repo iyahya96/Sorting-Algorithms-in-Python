@@ -1,21 +1,9 @@
-'''def count_sort(original_array:list[int])-> list[int]:
 
-    maximum_number = max(original_array)
-    count_array = [0] * (maximum_number + 1)
+'''Counting sort is an efficient, non-comparison based sorting algorithm particularly well-suited
+for sorting a collection of objects according to keys that are small, non-negative integers.
+It operates by determining the position of each element in the output array by counting the
+occurrences of each unique key value.'''
 
-    while len(original_array) > 0:
-        num = original_array.pop(0)
-        count_array[num] += 1
-
-    for j in range(len(count_array)):
-        while count_array[j] > 0:
-            original_array.append(j)
-            count_array[j] -= 1
-    return original_array'''
-
-
-'''Counting sort is an efficient, non-comparison based sorting algorithm particularly well-suited for sorting a collection of objects according to keys that are small, non-negative integers.
-It operates by determining the position of each element in the output array by counting the occurrences of each unique key value.'''
 def count_sort(given_array:list[int])->list[int]:
 
     #determine max
@@ -40,5 +28,3 @@ def count_sort(given_array:list[int])->list[int]:
         output[count_array[i]] = i
         count_array[i] += 1
     return output
-
-print(count_sort([1,0,3,1,3,1]))
