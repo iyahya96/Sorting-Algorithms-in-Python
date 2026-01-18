@@ -15,14 +15,3 @@ def selection_sort(arr: list[int]) -> list[int]:
         if min_index != i:
             arr[i],arr[min_index] = arr[min_index],arr[i]
     return arr
-
-# Test cases for selection_sort
-
-print(selection_sort([]))                    # Empty list: []
-print(selection_sort([1]))                   # Single element: [1]
-print(selection_sort([5, 5, 5, 5]))          # All identical: [5, 5, 5, 5]
-print(selection_sort([1, 2, 3, 4, 5]))       # Already sorted: [1, 2, 3, 4, 5]
-print(selection_sort([5, 4, 3, 2, 1]))       # Reverse sorted: [1, 2, 3, 4, 5]
-print(selection_sort([3, 1, 4, 1, 5, 9]))    # Random order with duplicates: [1, 1, 3, 4, 5, 9]
-print(selection_sort([-2, -5, 0, 3, 1]))     # Includes negatives: [-5, -2, 0, 1, 3]
-print(selection_sort([2, 3, 2, 1, 3]))       # Duplicates: [1, 2, 2, 3, 3]
