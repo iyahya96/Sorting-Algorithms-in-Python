@@ -16,15 +16,3 @@ def bubble_sort(arr):
                 swaping = True
         end-=1
     return arr
-
-
-#Driver code
-print(bubble_sort([1.2,3.5,0.1,8.7]))              # Floats 
-print(bubble_sort([5, 5, 5, 5]))                   # Identical elements
-print(bubble_sort([1, 2, 3, 4, 5]))                # Already sorted
-print(bubble_sort([5, 4, 3, 2, 1]))                # Descending order
-print(bubble_sort([-3, -1, -2, 0, 2]))             # Negative numbers
-print(bubble_sort([2, 3, 2, 1, 3]))                # Duplicates
-print(bubble_sort([]))                             # Empty list
-print(bubble_sort([42]))                           # Single element
-#print(bubble_sort([1, "a", 3]))                  # Uncomment to see TypeError
